@@ -16,8 +16,8 @@ import URLShare from "./Page/Client/CreateMeeting/URLShare/URLShare";
 import ChooseHour from "./Page/Client/JoinMeeting/ChooseHour/ChooseHour";
 import ChooseUser from "./Page/Client/JoinMeeting/ChooseUser/ChooseUser";
 import CreateFloorPlan from "./Page/Admin/RoomOwner/CreateFloorPlan/CreateFloorPlan";
-import RoomStatus from "./Page/Admin/OrderRoom/RoomStatus/RoomStatus";
-import RoomFloorPlan from "./Page/Admin/OrderRoom/RoomFloorPlan/RoomFloorPlan";
+import RoomStatus from "./Page/Client/OrderRoom/RoomStatus/RoomStatus";
+import RoomFloorPlan from "./Page/Client/OrderRoom/RoomFloorPlan/RoomFloorPlan";
 
 export default function App() {
   return (
