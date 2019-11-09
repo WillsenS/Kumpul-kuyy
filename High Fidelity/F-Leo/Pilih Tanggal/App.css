@@ -10,6 +10,11 @@ a {
     color: black;
 }
 
+hr {
+    margin: 0% 15%;
+}
+
+
 nav {
     background-color: #0066ff;
     height: 3.5%;
@@ -39,7 +44,6 @@ nav {
     width: auto;
     height: auto;
     padding: 45% 20%;
-    /* background-color: pink; */
 }
 
 .UserListComponent {
@@ -381,6 +385,7 @@ p.User34 {
     height: 100%;
     width: 50%;
     background-color: red;
+    display: inline-block;
 }
 
 .M3over4ProgressBar {
@@ -389,6 +394,7 @@ p.User34 {
     height: 100%;
     width: 75%;
     background-color: orange;
+    display: inline-block;
 }
 
 .M4over4ProgressBar {
@@ -397,6 +403,7 @@ p.User34 {
     height: 100%;
     width: 100%;
     background-color: green;
+    display: inline-block;
 }
 
 .Mover4Word {
@@ -416,10 +423,112 @@ p.User34 {
     vertical-align: middle;
 }
 
+.MeetingSchedule {
+    text-align: left;
+    margin: 0% 15% 3% 15%;
+}
+
+.ScheduleTitle {
+    font-size: 25px;
+}
+
+.ScheduleDetail {
+    font-size: 18px;
+    margin: 0% 0% 1% 5%;
+}
+
+.MeetingAttendance {
+    text-align: left;
+    margin: 0% 15%;
+}
+
+.Availability {
+    font-size: 20px;
+    margin: 5% 2% 5% 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.SelectButtonSchedule {
+    width: 4.5%;
+    height: 4%;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p.SelectButtonSchedule {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 0px solid white;
+    margin: 1% 0% 0% 25%;
+    font-size: 20px;
+}
+
+.ScheduleProgressBar {
+    text-align: left;
+    align-items: left;
+    align-content: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 15%;
+    margin: 0% 15%;
+}
+
+.DirectProgressBar {
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    height: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0% 0% 0% 3.5%;
+}
+
+.DirectMover4Word {
+    margin: -4.75% 0% 0% 102%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.MeetingAttendee {
+    text-align: left;
+}
+
+p.MeetingAttendee {
+    margin: 0% 18% 1% 18%;
+}
+
+div.MeetingAttendee {
+    margin: 0% 9%;
+    width: 36.5%;
+    position: absolute;
+    display: grid;
+    min-height: 555px;
+    grid-template-rows: 50px 50px 50px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.EachMeetingAttendee {
+    padding: 0% 5%;
+    vertical-align: middle;
+}
+
+.SpecialAttend1 {
+    margin: -10.5% 2% 0% 0%;
+}
+
+.SpecialAttend {
+    margin: -345% 2% 0% 0%;
+}
+
 .MeetingInformation {
     width: auto;
     height: auto;
-    /* background-color: mediumaquamarine; */
     padding: 45% 15%;
 }
 
