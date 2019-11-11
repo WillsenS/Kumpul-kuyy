@@ -17,4 +17,7 @@ $(function(){
         // document.execCommand("copy");
         
     })
+    
+    $('#sandbox-container input').datepicker({
+});
 })
