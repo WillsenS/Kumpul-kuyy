@@ -420,7 +420,7 @@ p.User34 {
     text-align: left;
     margin: 5% 15% 3% 15%;
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     grid-template-rows: 50% 50%;
 }
 
