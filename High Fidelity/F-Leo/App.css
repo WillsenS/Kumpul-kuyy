@@ -2,7 +2,6 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -10,19 +9,12 @@ a {
     color: black;
 }
 
-hr {
-    margin: 0% 15%;
+a:hover {
+    text-decoration: none;
 }
 
-
-nav {
-    background-color: #0066ff;
-    height: 3.5%;
-    min-width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    vertical-align: middle;
+hr {
+    margin: 0% 15%;
 }
 
 .NavKumpulKuy {
@@ -50,7 +42,7 @@ nav {
     border: 1px solid black;
     border-radius: 5%;
     background-color: lightgrey;
-    width: auto;
+    width: 110%;
     height: auto;
     padding: 12%;
     display: grid;
@@ -294,8 +286,9 @@ p.User34 {
 .JamEach {
     border-right: 1px solid black;
     display: grid;
-    grid-template-rows: 21px repeat(24, auto);
+    grid-template-rows: 16px repeat(24, auto) 12px;
     vertical-align: middle;
+    font-size: 12px;
 }
 
 .EachJam {
@@ -425,11 +418,16 @@ p.User34 {
 
 .MeetingSchedule {
     text-align: left;
-    margin: 0% 15% 3% 15%;
+    margin: 5% 15% 3% 15%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 50% 50%;
 }
 
 .ScheduleTitle {
     font-size: 25px;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .ScheduleDetail {
@@ -507,7 +505,7 @@ div.MeetingAttendee {
     width: 36.5%;
     position: absolute;
     display: grid;
-    min-height: 555px;
+    min-height: 300px;
     grid-template-rows: 50px 50px 50px;
     border: 1px solid black;
     font-size: 18px;
@@ -523,7 +521,7 @@ div.MeetingAttendee {
 }
 
 .SpecialAttend {
-    margin: -345% 2% 0% 0%;
+    margin: -9.5% 2% 0% 0%;
 }
 
 .MeetingInformation {
@@ -539,7 +537,7 @@ div.MeetingAttendee {
     height: auto;
     padding: 12%;
     display: grid;
-    grid-template-rows: 100px 100px 100px auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 .MeetingInformationComponent {

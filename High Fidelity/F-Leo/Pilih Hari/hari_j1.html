@@ -1,169 +1,244 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Kumpul Kuy!</title>
-        <link rel = "stylesheet" type = "text/css" href = "../App.css">
-    </head>
-    <body>
-        <nav>
-            Kumpul Kuy!
-        </nav>
-        <div class = "Content">
-            <div class = "UserList">
-                <div class = "UserListComponent">
-                    <p class = "PersonInThisMeeting"><b>Person in This Meeting</b></p>
-                    <div class = "User1">
-                        <!--User 1 (kita)-->
-                        <span class = "User1">
-                            <img src = "../user_logo.png" class = "UserLogo1">
-                            <p class = "User1">User 1 (me)</p>
-                            <a href = "hari_jall.html"><input type = "checkbox" value = "Select All" class = "UserSelectAll">
-                                <p class = "UserSelectAll">Select<br>All</p>
-                            </a>
-                        </span>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login - Kumpul Kuy!</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel = "stylesheet" type = "text/css" href = "../App.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="../../Homepage/login.html">Kumpul Kuy!</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="../../Homepage/login.html">HOME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../../F-Johanes/index.html">Create new schedule</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../../F-Johanes/faq.html">faq</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page login-page">
+        <section class="clean-block clean-form dark">
+            <!-- <div class="container">
+                <div class="block-heading"></div>
+            </div> -->
+
+            <!--klo mau cut dari sini-->
+            <div class = "Content">
+                <div class = "UserList">
+                    <div class = "UserListComponent">
+                        <p class = "PersonInThisMeeting"><b>Person in This Meeting</b></p>
+                        <div class = "User1">
+                            <!--User 1 (kita)-->
+                            <span class = "User1">
+                                <img src = "../user_logo.png" class = "UserLogo1">
+                                <p class = "User1">User 1 (me)</p>
+                                <a href = "hari_jall.html"><input type = "checkbox" value = "Select All" class = "UserSelectAll">
+                                    <p class = "UserSelectAll">Select<br>All</p>
+                                </a>
+                            </span>
+                        </div>
+                        <div class = "User2">
+                            <!--User 2 (meeting leader)-->
+                            <span class = "User2">
+                                <img src = "../user_logo.png" class = "UserLogo2">
+                                <p class = "User2">User 2 (Leader)</p>
+                            </span>
+                        </div>
+                        <div class = "User34">
+                            <!--User 3-->
+                            <span class = "User34">
+                                <img src = "../user_logo.png" class = "UserLogo3">
+                                <p class = "User34">User 3</p>
+                            </span>
+                        </div>
+                        <div class = "User34">
+                            <!--User 4-->
+                            <span class = "User34">
+                                <img src = "../user_logo.png" class = "UserLogo4">
+                                <p class = "User34">User 4</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class = "User2">
-                        <!--User 2 (meeting leader)-->
-                        <span class = "User2">
-                            <img src = "../user_logo.png" class = "UserLogo2">
-                            <p class = "User2">User 2 (Leader)</p>
-                        </span>
-                    </div>
-                    <div class = "User34">
-                        <!--User 3-->
-                        <span class = "User34">
-                            <img src = "../user_logo.png" class = "UserLogo3">
-                            <p class = "User34">User 3</p>
-                        </span>
-                    </div>
-                    <div class = "User34">
-                        <!--User 4-->
-                        <span class = "User34">
-                            <img src = "../user_logo.png" class = "UserLogo4">
-                            <p class = "User34">User 4</p>
-                        </span>
+                    <div class = "BackButton">
+                        <a href = "../Pilih Tanggal/tanggal.html" class = "Arrow">&#8592;</a>
                     </div>
                 </div>
-                <div class = "BackButton">
-                    <a href = "../Pilih Tanggal/tanggal.html" class = "Arrow">&#8592;</a>
+                <div class = "CalendarSchedule">
+                    <!-- pembagian per jam, tampang per jadwal dengan menggunakan progress bar -->
+                    <div class = "BulanTahun">
+                        <div class = "PanahPindahBulan">
+                            <p>16 Oct</p><p class = "Arrow">&#8592;</p>
+                        </div>
+                        <div class = "NamaBulanTahun">
+                            <div class = "Bulan"><b>17</b></div>
+                            <div class = "Tahun">Oktober 2019</div>
+                        </div>
+                        <div class = "PanahPindahBulan">
+                            <p>18 Oct</p><p class = "Arrow">&#8594;</p>
+                        </div>
+                    </div>
+                    <div class = "JamPemilihan">
+                        <div class = "JamEach">
+                            <!-- Diprint setiap jam -->
+                            <div></div>
+                            <div class = "EachJam"><p class = "NamaJam">01.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">02.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">03.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">04.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">05.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">06.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">07.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">08.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">09.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">10.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">11.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">12.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">13.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">14.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">15.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">16.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">17.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">18.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">19.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">20.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">21.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">22.00</p></div>
+                            <div class = "EachJam"><p class = "NamaJam">23.00</p></div>
+                            <div></div>
+                        </div>
+                        <div class = "JadwalEach">
+                            <!-- Diprint jam dalam bentuk timeline -->
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Jadwal1">
+                                <a href = "../Pilih Jadwal/jadwal_selected.html">
+                                    <div class = "Time1">
+                                        <div class = "ProgressBar">
+                                            <div class = "M3over4ProgressBar"></div>
+                                        </div>
+                                        <p class = "Mover4Word">3/4</p>
+                                        <a href = "hari_default.html"><div class = "SelectButton">✓</div></a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Jadwal2">
+                                <a href = "../Pilih Jadwal/jadwal_default.html">
+                                    <div class = "Time2">
+                                        <div class = "ProgressBar">
+                                            <div class = "M3over4ProgressBar"></div>
+                                        </div>
+                                        <p class = "Mover4Word">3/4</p>
+                                        <a href = "hari_jall.html"><div class = "SelectButton"></div></a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "Timeline"></div>
+                            <div class = "TimelineLast"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "MeetingInformation">
+                    <!-- pemberitahuan mengenai meeting -->
+                    <div class = "MeetingInformationComponent">
+                        <div class = "MeetingName">
+                            <p class = "PersonInThisMeeting"><b>Meeting Name</b></p>
+                            <p class = "MeetingInformationList">
+                                Sprint Review #23 Kumpul Kuy!
+                            </p>
+                        </div>
+                        <div class = "MeetingLocation">
+                            <p class = "PersonInThisMeeting"><b>Meeting Location</b></p>
+                            <p class = "MeetingInformationList">
+                                Jl. Menteng Raya No.64, RT.3/RW.9, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat
+                            </p>
+                        </div>
+                        <div class = "MeetingDescription">
+                            <p class = "PersonInThisMeeting"><b>Meeting Description</b></p>
+                            <p class = "MeetingIndormationList">
+                                23rd Sprint Review, reviewing story points got by every squad, regarding main web and intern projects progession.
+                            </p>
+                        </div>
+                        <div class = "FillDeadline">
+                            <p class = "PersonInThisMeeting"><b>DEADLINE</b></p>
+                            <p class = "Deadline">
+                                2019-11-05 11:00:00
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class = "CalendarSchedule">
-                <!-- pembagian per jam, tampang per jadwal dengan menggunakan progress bar -->
-                <div class = "BulanTahun">
-                    <div class = "PanahPindahBulan">
-                        <p>16 Oct</p><p class = "Arrow">&#8592;</p>
-                    </div>
-                    <div class = "NamaBulanTahun">
-                        <div class = "Bulan"><b>17</b></div>
-                        <div class = "Tahun">Oktober 2019</div>
-                    </div>
-                    <div class = "PanahPindahBulan">
-                        <p>18 Oct</p><p class = "Arrow">&#8594;</p>
-                    </div>
+            <!--sampe sini-->
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="../../Homepage/login.html">Home</a></li>
+                        <li><a href="../../F-Ferdi/1a-register-start.html">Register</a></li>
+                        <li><a href="../../F-Johanes/index.html">Create new schedule</a></li>
+                    </ul>
                 </div>
-                <div class = "JamPemilihan">
-                    <div class = "JamEach">
-                        <!-- Diprint setiap jam -->
-                        <div></div>
-                        <div class = "EachJam"><p class = "NamaJam">01.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">02.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">03.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">04.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">05.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">06.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">07.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">08.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">09.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">10.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">11.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">12.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">13.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">14.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">15.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">16.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">17.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">18.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">19.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">20.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">21.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">22.00</p></div>
-                        <div class = "EachJam"><p class = "NamaJam">23.00</p></div>
-                        <div></div>
-                    </div>
-                    <div class = "JadwalEach">
-                        <!-- Diprint jam dalam bentuk timeline -->
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Jadwal1">
-                            <a href = "../Pilih Jadwal/jadwal_selected.html">
-                                <div class = "Time1">
-                                    <div class = "ProgressBar">
-                                        <div class = "M3over4ProgressBar"></div>
-                                    </div>
-                                    <p class = "Mover4Word">3/4</p>
-                                    <a href = "hari_default.html"><div class = "SelectButton">✓</div></a>
-                                </div>
-                            </a>
-                        </div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Jadwal2">
-                            <a href = "../Pilih Jadwal/jadwal_default.html">
-                                <div class = "Time2">
-                                    <div class = "ProgressBar">
-                                        <div class = "M3over4ProgressBar"></div>
-                                    </div>
-                                    <p class = "Mover4Word">3/4</p>
-                                    <a href = "hari_jall.html"><div class = "SelectButton"></div></a>
-                                </div>
-                            </a>
-                        </div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "Timeline"></div>
-                        <div class = "TimelineLast"></div>
-                    </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="../../F-Johanes/contact-us.html">Contact us</a></li>
+                        <li><a href="../../F-Johanes/testimonials.html">Reviews</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class = "MeetingInformation">
-                <!-- pemberitahuan mengenai meeting -->
-                <div class = "MeetingInformationComponent">
-                    <div class = "MeetingName">
-                        <p class = "PersonInThisMeeting"><b>Meeting Name</b></p>
-                        <p class = "MeetingInformationList">
-                            Sprint Review #23 Kumpul Kuy!
-                        </p>
-                    </div>
-                    <div class = "MeetingLocation">
-                        <p class = "PersonInThisMeeting"><b>Meeting Location</b></p>
-                        <p class = "MeetingInformationList">
-                            Jl. Menteng Raya No.64, RT.3/RW.9, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat
-                        </p>
-                    </div>
-                    <div class = "MeetingDescription">
-                        <p class = "PersonInThisMeeting"><b>Meeting Description</b></p>
-                        <p class = "MeetingIndormationList">
-                            23rd Sprint Review, reviewing story points got by every squad, regarding main web and intern projects progession.
-                        </p>
-                    </div>
-                    <div class = "FillDeadline">
-                        <p class = "PersonInThisMeeting"><b>DEADLINE</b></p>
-                        <p class = "Deadline">
-                            2019-11-05 11:00:00
-                        </p>
-                    </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="../../F-Johanes/faq.html">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright Text</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
 </html>
