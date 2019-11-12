@@ -274,6 +274,10 @@ p.User34 {
     text-align: center;
 }
 
+p.TanggalBulanLain p.TanggalJadwal {
+    margin: 10% 0% 0% 0%;
+}
+
 .JamPemilihan {
     height: 100%;
     margin: 0% 20%;
