@@ -2,7 +2,6 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -10,19 +9,12 @@ a {
     color: black;
 }
 
-hr {
-    margin: 0% 15%;
+a:hover {
+    text-decoration: none;
 }
 
-
-nav {
-    background-color: #0066ff;
-    height: 3.5%;
-    min-width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    vertical-align: middle;
+hr {
+    margin: 0% 15%;
 }
 
 .NavKumpulKuy {
@@ -47,14 +39,14 @@ nav {
 }
 
 .UserListComponent {
-    border: 1px solid black;
     border-radius: 5%;
-    background-color: lightgrey;
-    width: auto;
+    background-color: whitesmoke;
+    width: 110%;
     height: auto;
     padding: 12%;
     display: grid;
     grid-template-rows: 50px 50px 50px 50px 50px;
+    box-shadow: 5px 5px 10px lightgrey;
 }
 
 .PersonInThisMeeting {
@@ -65,8 +57,8 @@ nav {
 }
 
 div.User1 {
-    border-radius: 5%;
-    background-color: grey;
+    border-radius: 50px;
+    background-color: lightskyblue;
     width: 100%;
     margin: 4% 0% 4% 0%;
     padding: 3%;
@@ -95,7 +87,7 @@ p.User1 {
     height: 25px;
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0% 12% 0%;
+    margin: 0% 0% 13% 0%;
 }
 
 .UserSelectAll {
@@ -134,7 +126,7 @@ p.User2 {
     height: 25px;
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0% 11% 0%;
+    margin: 0% 0% 13% 0%;
 }
 
 div.User34 {
@@ -176,7 +168,7 @@ p.User34 {
     height: 25px;
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0% 11% 0%;
+    margin: 0% 0% 13% 0%;
 }
 
 .BackButton {
@@ -187,9 +179,12 @@ p.User34 {
 .CalendarSchedule {
     width: auto;
     height: auto;
-    padding: 0% 5%;
+    padding: 0% 5% 5% 5%;
     text-align: center;
     align-content: center;
+    background-color: whitesmoke;
+    border-radius: 0% 0% 5% 5%;
+    box-shadow: 5px 5px 10px lightgrey;
 }
 
 .BulanTahun {
@@ -273,6 +268,7 @@ p.User34 {
     text-decoration: none;
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
 .TanggalJadwal {
@@ -280,6 +276,7 @@ p.User34 {
     color: black;
     width: 100%;
     text-align: center;
+    margin: 0%;
 }
 
 .JamPemilihan {
@@ -294,8 +291,9 @@ p.User34 {
 .JamEach {
     border-right: 1px solid black;
     display: grid;
-    grid-template-rows: 21px repeat(24, auto);
+    grid-template-rows: 16px repeat(24, auto) 12px;
     vertical-align: middle;
+    font-size: 12px;
 }
 
 .EachJam {
@@ -345,9 +343,9 @@ p.User34 {
 
 .Time1 {
     border: 1px solid black;
-    border-radius: 5%;
-    width: 99.6%;
-    height: 99.5%;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
     background-color: lightblue;
     vertical-align: middle;
 }
@@ -362,9 +360,9 @@ p.User34 {
 
 .Time2 {
     border: 1px solid black;
-    border-radius: 5%;
-    width: 99.6%;
-    height: 99.5%;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
     background-color: lightblue;
     vertical-align: middle;
 }
@@ -425,11 +423,16 @@ p.User34 {
 
 .MeetingSchedule {
     text-align: left;
-    margin: 0% 15% 3% 15%;
+    margin: 5% 15% 3% 15%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 50% 50%;
 }
 
 .ScheduleTitle {
     font-size: 25px;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .ScheduleDetail {
@@ -507,7 +510,7 @@ div.MeetingAttendee {
     width: 36.5%;
     position: absolute;
     display: grid;
-    min-height: 555px;
+    min-height: 300px;
     grid-template-rows: 50px 50px 50px;
     border: 1px solid black;
     font-size: 18px;
@@ -523,27 +526,32 @@ div.MeetingAttendee {
 }
 
 .SpecialAttend {
-    margin: -345% 2% 0% 0%;
+    margin: -9.5% 2% 0% 0%;
+}
+
+.PushDown {
+    padding: 1.35% 0% 0% 0%;
 }
 
 .MeetingInformation {
     width: auto;
     height: auto;
-    padding: 45% 15%;
+    padding: 45% 12%;
 }
 
 .MeetingInformationComponent {
-    border: 1px solid black;
     border-radius: 5%;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     height: auto;
     padding: 12%;
     display: grid;
-    grid-template-rows: 100px 100px 100px auto;
+    grid-template-rows: auto auto auto auto;
+    font-size: 12px;
+    box-shadow: 5px 5px 10px lightgrey;
 }
 
-.MeetingInformationComponent {
-    font-size: 12px;
+.MeetingInformationList {
+    margin: 0% 0% 20% 0%;
 }
 
 .Deadline {
