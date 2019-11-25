@@ -85,7 +85,7 @@
                         id="body-decoration"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-41-56.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-03.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-09.png"
                             style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-15.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-24.png" style="width: 100px;height: 100px;margin: 10px;">
                         <img
-                            class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-34.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-51.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-43-00.png" style="width: 100px;height: 100px;margin: 10px;"></div>
+                            class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-34.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-42-51.png" style="width: 100px;height: 100px;margin: 10px;"><img id="draggable" class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-43-00.png" style="width: 100px;height: 100px;margin: 10px;"></div>
                     <div class="card-body text-center"
                         id="body-accessories"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-44-39.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-44-47.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-44-53.png"
                             style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-45-03.png" style="width: 100px;height: 100px;margin: 10px;"><img class="rounded" src="assets/img/Screenshot%20from%202019-11-11%2012-45-12.png" style="width: 100px;height: 100px;margin: 10px;">
@@ -145,7 +145,17 @@
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/card.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="assets/js/theme-1.js"></script>
+    <script>
+         $(function() {
+            $( "#draggable" ).draggable();
+            
+         });
+      </script>
 </body>
 
 </html>
